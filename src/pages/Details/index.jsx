@@ -10,7 +10,6 @@ export function Details(){
   return (
     <Container>
       <Header/>
-
       <main>
         <Content>
           <ButtonText title="Excluir nota"/>
