@@ -1,4 +1,5 @@
-import { Container, Profile } from "./styles";
+import {RiShutDownLine} from 'react-icons/ri'  //biblioteca de icones
+import { Container, Profile, Logout } from "./styles";
 
 export function Header(){
     return (
@@ -14,6 +15,9 @@ export function Header(){
                     <strong>João Victor Pereira</strong>
                 </div>
             </Profile>
+            <Logout>
+                <RiShutDownLine/>
+            </Logout>
         </Container>
     )
 }
