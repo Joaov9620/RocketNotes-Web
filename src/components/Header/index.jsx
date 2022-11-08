@@ -4,14 +4,14 @@ import { Container, Profile, Logout } from "./styles";
 export function Header(){
     return (
         <Container>
-            <Profile>
+            <Profile to="/profile">
                 <img
                  src="https://github.com/Joaov9620.png"
                  alt="Foto do usuário"
                 />
 
                 <div>
-                    <samp>Bem-vindo</samp>
+                    <span>Bem-vindo</span>
                     <strong>João Victor Pereira</strong>
                 </div>
             </Profile>
