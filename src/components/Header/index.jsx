@@ -16,7 +16,7 @@ export function Header(){
                 </div>
             </Profile>
             <Logout>
-                <RiShutDownLine/>
+                <RiShtDownLine/>
             </Logout>
         </Container>
     )
