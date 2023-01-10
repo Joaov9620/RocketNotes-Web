@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    margin-bottom: 8px;
 
     display: flex;
     align-items: center;
@@ -17,12 +18,12 @@ export const Container = styled.div`
         width: 100%;
 
         padding: 12px;
-        color: ${({theme}) => theme.COLORS.WHITE};
+        color: ${({theme}) => theme.COLORS.GRAY_300};
         background-color: transparent;
         border: 0;
         
-        &:placeholder{
-            color: ${({theme}) => theme.COLORS.GRAY_300}; 
+        &::placeholder{
+            color: ${({theme}) => theme.COLORS.WHITE}; 
         }
     }
 
