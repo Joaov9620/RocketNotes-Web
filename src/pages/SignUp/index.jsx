@@ -36,8 +36,6 @@ export function SignUp(){
         })
     }
 
-
-
     return(
         <Container>
             <BackgroundImg/>

@@ -13,7 +13,7 @@ import { Tag } from "../../components/Tag"
 export function Details(){
   const [data, setData] = useState(null);
 
-  const params = useParams();
+  const params = useParams(); 
   const navigate = useNavigate();
 
   function handleBack(){

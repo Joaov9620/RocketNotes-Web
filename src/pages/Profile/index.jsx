@@ -28,15 +28,14 @@ export function Profile(){
 
     function handleBack(){
         navigate(-1);
-      }
+    }
 
     async function handleUpdate(){
         const updated = {
             name,
             email,
             password: passwordNew,
-            old_password: passwordOld
-            
+            old_password: passwordOld   
         }
 
         const userUpdated = Object.assign(user, updated);
@@ -45,7 +44,6 @@ export function Profile(){
     }
 
     function handleChangeAvatar(event){
-
         //guardar o arquivo atualizado
         const file = event.target.files[0];
         setAvatarFile(file);

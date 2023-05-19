@@ -41,7 +41,6 @@ function AuthProvider({children}){
 
     async function updateProfile({user, avatarFile}){
         try{
-
             if(avatarFile){
                 //envia como arquivo
                 const fileUploadForm = new FormData();

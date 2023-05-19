@@ -23,7 +23,7 @@ export function New(){
   const [newLink, setNewLink] = useState(""); //armazenar o novo link
 
   const [ tags, setTags] = useState([]);
-  const [ newTag, setNewTag] = useState([]);
+  const [ newTag, setNewTag] = useState("");
 
   const navigate = useNavigate();
 
@@ -51,7 +51,7 @@ export function New(){
     setTags(prevState => prevState.filter(tag => tag !== deleted))
   };
 
-  async function handleNewNote(){
+  async function  handleNewNote(){
     if(!title){
       return alert("Digite o título da nota")
     }
@@ -83,11 +83,11 @@ export function New(){
         <main>
             <Form>
                 <header>
-                    <h1>Criar nota</h1>
-                    <ButtonText 
-                      title="voltar" 
-                      onClick={handleBack}
-                    />
+                  <h1>Criar nota</h1>
+                  <ButtonText 
+                    title="voltar" 
+                    onClick={handleBack}
+                  />
                 </header>
 
                 <Input 
@@ -131,7 +131,7 @@ export function New(){
                         />
                       ))
                     }
-
+                    
                     <NoteItem 
                       isNew 
                       placeholder="Nova tag"
